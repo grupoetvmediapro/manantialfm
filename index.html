@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#126c9c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Manantial FM">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./favicon-marca.png" type="image/png" sizes="64x64">
+<title>Manantial FM | Escuchar en directo</title>
+<meta name="description" content="Escucha Manantial FM. Tu radio amiga, tu música, tu fe.">
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 18px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top,#175d87,#081a32 65%);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+main {
+  width: 100%;
+  max-width: 960px;
+  padding: clamp(20px,5vw,48px);
+  background: #ffffff10;
+  border:1px solid #ffffff28;
+  box-shadow:0 20px 60px #0005;
+  border-radius: 24px;
+}
+h1 { font-size: 40px; margin-bottom: 10px; }
+h2 { font-size: 23px; }
+section.programa {margin:18px 0;padding:22px;background:#ffffff12;border:1px solid #ffffff25;border-radius:18px;text-align:left;}
+section.programa h3 {margin:0 0 8px;color:#ffcf76;}
+.historia {text-align:left;line-height:1.7;}
+p { line-height: 1.5; }
+audio { width: 100%; margin: 20px 0; }
+.boton {
+  display: block;
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 14px;
+  background: #ffbe45;
+  color: #10233d;
+  font-weight: bold;
+  text-decoration: none;
+}
+.azul { background: #d5f3ff; }
+nav {display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:24px 0;}
+nav a {color:#fff;text-decoration:none;border:1px solid #ffffff55;padding:9px 13px;border-radius:24px;}
+nav a:hover {background:#ffffff25;}
+.boton:hover {filter:brightness(1.07);}
+.hero {padding:18px 0 25px;}
+.hero h1 {letter-spacing:2px;color:#ffe0a1;}
+.tagline {font-size:1.1rem;color:#cbeafa;}
+@media(min-width:700px){.program-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.program-grid .programa{margin:0}}
+
+/* Fondos del directorio de iglesias */
+#iglesias article {
+  color: #f1f6fc;
+  background-image: linear-gradient(115deg, rgba(8, 20, 37, .91), rgba(12, 31, 50, .78)), var(--paisaje-iglesia);
+  background-position: center;
+  background-size: cover;
+  overflow-wrap: anywhere;
+}
+#iglesias article h3 { color: #fff; }
+#iglesias article a[href] { color: #bce8ff !important; text-decoration: underline; text-underline-offset: .15em; }
+#iglesias article:nth-child(4n + 1) {
+  --paisaje-iglesia: url("https://images.unsplash.com/photo-1771456451057-56b342aa50d6?auto=format&fit=crop&w=760&q=70");
+}
+#iglesias article:nth-child(4n + 2) {
+  --paisaje-iglesia: url("https://images.unsplash.com/photo-1743424222535-6c9b296884c5?auto=format&fit=crop&w=760&q=70");
+}
+#iglesias article:nth-child(4n + 3) {
+  --paisaje-iglesia: url("https://images.unsplash.com/photo-1675229531979-df41fb97de62?auto=format&fit=crop&w=760&q=70");
+}
+#iglesias article:nth-child(4n + 4) {
+  --paisaje-iglesia: url("https://images.unsplash.com/photo-1765874457702-278668124f24?auto=format&fit=crop&w=760&q=70");
+}
+.logo-marca { display: block; width: clamp(120px, 24vw, 180px); height: auto; margin: 0 auto 1rem; }
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<img class="logo-marca" src="./logo-oficial.webp" alt="" width="384" height="384" decoding="async">
+
+<img src="./portada-manantial.webp" alt="Manantial FM, radio cristiana en línea las 24 horas desde Barcelona" width="2048" height="768" fetchpriority="high" style="display:block;width:100%;height:auto;border-radius:16px">
+<h1>MANANTIAL FM</h1><p class="tagline">Tu radio amiga, tu música, tu fe.</p><p>Desde Barcelona para las naciones 🌍</p><nav aria-label="Secciones"><a href="#directo">En directo</a><a href="#horizonte-sonoro">Horizonte Sonoro Radio</a><a href="#programacion">Programación</a><a href="#mision">Nuestra misión</a><a href="#recogida-alimentos">Recogida de alimentos</a><a href="#iglesias">Iglesias y comunidades</a><a href="#talento-cristiano">Talento Cristiano de Cataluña</a><a href="#publicidad">Publicidad</a><a href="#fundadores">Fundadores</a><a href="#apoyar">Apoyar</a></nav></header>
+<h2 id="directo">📻 Escuchar en directo</h2>
+
+
+<figure style="margin:1rem 0"><img src="./carteles/radio-directo.webp" alt="Micrófono y auriculares en un estudio de radio" width="1200" height="510" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px"></figure>
+
+<p>Elige qué quieres escuchar o ver en directo.</p>
+
+<a class="boton azul" href="https://live1.ovalcast.com:3916/live/bcngospeltvlive.m3u8" target="_blank" rel="noopener noreferrer">
+📺 VER BCN GOSPEL CHANNEL EN DIRECTO
+</a>
+
+
+<a class="boton azul" href="https://cast4.prosandoval.com/listen/bcn_gospel_channel/radio.mp3" target="_blank" rel="noopener">
+🎧 ESCUCHAR MANANTIAL FM EN DIRECTO
+</a>
+
+<section id="horizonte-sonoro" class="programa">
+<h2>🎶 Horizonte Sonoro Radio</h2>
+<audio aria-label="Horizonte Sonoro Radio en directo" controls preload="none">
+<source src="https://s3.citrus3.com:2000/stream/manantialbrfm" type="audio/mpeg">
+Tu navegador no admite audio.
+</audio>
+<a class="boton azul" href="https://s3.citrus3.com:2000/public/manantialbrfm" target="_blank" rel="noopener noreferrer">▶ ESCUCHAR HORIZONTE SONORO RADIO EN CITRUS3</a>
+</section>
+
+<section id="apoyar" aria-label="Apoya Manantial FM" style="margin-top:25px;padding-top:12px;border-top:1px solid #ffffff55">
+<h2>❤️ Ayúdanos a seguir compartiendo esperanza</h2>
+<figure style="margin:1rem 0"><img src="./carteles/radio-apoyo.webp" alt="Ilustración de voluntarios preparando ayuda comunitaria" width="1200" height="510" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px"></figure>
+
+<p>Tu aportación ayuda a mantener Manantial FM en el aire.</p>
+<a class="boton" href="https://www.paypal.com/ncp/payment/MZACBZ2BEMJSA" target="_blank" rel="noopener noreferrer">💛 APOYAR MANANTIAL FM CON PAYPAL</a>
+</section>
+
+<section id="programacion" aria-label="Estilos musicales de Manantial FM" style="margin-top:35px"><h2>🎶 Una radio, muchos estilos</h2>
+<figure style="margin:1rem 0"><img src="./carteles/radio-estilos.webp" alt="Instrumentos que representan los estilos musicales de Manantial FM" width="1200" height="510" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px"></figure>
+<p>En Manantial FM la música nos une. Descubre diferentes sonidos y expresiones de fe, desde los clásicos del góspel hasta los ritmos más actuales. Esta selección es orientativa y no representa un horario fijo: nuestra programación está en renovación.</p><div class="program-grid"><section class="programa"><h3>🎤 Urbano y contemporáneo</h3>
+<figure style="margin:.75rem 0"><img src="./carteles/radio-urbano.webp" alt="Artista de hip hop frente al micrófono" width="720" height="420" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:10px"></figure>
+<p>Hip hop cristiano · Rap gospel · Trap cristiano · Reguetón cristiano · Pop cristiano · Rock cristiano · Electrónica cristiana</p></section><section class="programa"><h3>🙌 Alabanza y adoración</h3>
+<figure style="margin:.75rem 0"><img src="./carteles/radio-adoracion.webp" alt="Músicos en una sesión de alabanza" width="720" height="420" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:10px"></figure>
+<p>Worship · Alabanza · Adoración · Góspel contemporáneo · Música acústica · Baladas cristianas</p></section><section class="programa"><h3>🎷 Raíces y clásicos</h3>
+<figure style="margin:.75rem 0"><img src="./carteles/radio-clasicos.webp" alt="Saxofón y micrófono de estudio" width="720" height="420" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:10px"></figure>
+<p>Jazz · Blues · Soul · R&B · Funk · Góspel tradicional · Country gospel</p></section><section class="programa"><h3>🇧🇷 Brasil y ritmos del mundo</h3>
+<figure style="margin:.75rem 0"><img src="./carteles/radio-brasil.webp" alt="Guitarra acústica y pandeiro" width="720" height="420" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:10px"></figure>
+<p>Gospel Brasil · Bossa nova gospel · Samba gospel · Reggae cristiano · Música latina cristiana · Flamenco · Música andina</p></section></div><p><small>Los estilos pueden variar según la emisión. Próximamente anunciaremos la nueva programación.</small></p></section>
+<section aria-label="Próximamente en Manantial FM" class="programa" style="margin-top:18px"><h2>📅 Próximamente: programación de noche</h2>
+<figure style="margin:1rem 0"><img src="./carteles/radio-noche.webp" alt="Estudio de radio con Barcelona al anochecer" width="1200" height="510" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px"></figure>
+<p>Estamos preparando estos espacios para su emisión diaria. <strong>Horarios previstos (hora de Barcelona), pendientes de activación y confirmación.</strong></p><p>🕗 <strong>20:00 — Leyendas del Gospel</strong><br>🕘 <strong>21:00 — Mujeres de la Biblia</strong><br>🕙 <strong>22:00 — Hombres de la Biblia</strong><br>🎙️ <strong>La Otra Mejilla — todos los martes, próximamente (hora por confirmar)</strong></p><p><small>Próximamente. Estos horarios todavía no están en emisión y pueden ajustarse.</small></p></section>
+<section id="mision" class="programa historia"><h2>❤️ Nuestra misión: que nadie pierda la esperanza</h2>
+<figure style="margin:1rem auto;max-width:480px"><img src="./mision-paty-charles.webp" alt="Paty y Charles, juntos con los brazos cruzados" width="928" height="1141" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px"></figure>
+<p>Detrás de cada persona que atraviesa una situación difícil hay una historia, un nombre y una vida que merece respeto. Nadie debería sentirse invisible, olvidado o solo.</p><p>En Manantial FM creemos que la fe también se expresa con gestos sencillos: una mano tendida, una conversación que reconforta, un plato de comida o una prenda de abrigo. Nuestro deseo es acompañar especialmente a las personas sin hogar y a quienes más lo necesitan, sin juzgar y con el corazón abierto.</p><p>Queremos unir fuerzas con personas y entidades solidarias para <strong>conseguir alimentos y ropa</strong>, facilitar <strong>servicios de peluquería</strong> y buscar <strong>lugares donde las personas puedan ducharse y recuperar bienestar y dignidad</strong>. Son objetivos que iremos desarrollando según los recursos y colaboradores disponibles; no son servicios garantizados actualmente.</p><p><strong>No disponemos de refugio ni ofrecemos alojamiento.</strong> Pero sí queremos ofrecer algo que puede ser el comienzo de un cambio: cercanía, escucha y esperanza.</p><p><em>Desde Barcelona para las naciones. Manantial FM: un mensaje positivo y tu radio amiga.</em></p>
+<div style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid #ffcf76;background:#ffffff0d;border-radius:8px">
+<h3 style="margin-top:0">La Palabra que inspira nuestra misión</h3>
+<figure style="margin:1rem 0"><blockquote style="margin:0">«Porque tuve hambre, y me disteis de comer»</blockquote><figcaption style="color:#ffcf76;margin-top:.25rem">Mateo 25:35 · RVR1960</figcaption></figure>
+<figure style="margin:1rem 0"><blockquote style="margin:0">«Hijitos míos, no amemos de palabra ni de lengua, sino de hecho y en verdad»</blockquote><figcaption style="color:#ffcf76;margin-top:.25rem">1 Juan 3:18 · RVR1960</figcaption></figure>
+<figure style="margin:1rem 0"><blockquote style="margin:0">«Así que, según tengamos oportunidad, hagamos bien a todos»</blockquote><figcaption style="color:#ffcf76;margin-top:.25rem">Gálatas 6:10 · RVR1960</figcaption></figure>
+</div>
+</section>
+<section id="recogida-alimentos" class="programa historia" aria-label="Campaña solidaria de recogida de alimentos" style="border:2px solid #ffcf76;padding:24px;border-radius:18px;margin:26px 0"><p style="font-weight:800;letter-spacing:.06em;color:#ffcf76">CAMPAÑA DESTACADA · RECOGIDA SOLIDARIA DE ALIMENTOS</p><h2>🥫 Campaña solidaria: Un alimento, una esperanza</h2>
+<figure style="margin:1rem auto;max-width:560px"><img src="./alimentos-un-euro.webp" alt="Cartel solidario de BCN Gospel Channel y Manantial FM: Tu euro puede cambiar una vida" width="1024" height="1536" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px"></figure>
+<p style="font-size:clamp(1.3rem,3.5vw,2rem);font-weight:800;color:#ffcf76;margin:12px 0 20px">❤️ Un kilo de comida, un kilo de amor</p><p style="font-size:1.12rem"><strong>Recogemos alimentos donados para entregarlos a personas y familias en riesgo de exclusión social, especialmente quienes viven situaciones de vulnerabilidad o carecen de hogar.</strong></p><p><strong>Hay personas en riesgo de exclusión social para quienes llenar la despensa es un desafío diario. Un pequeño gesto puede convertirse en una gran ayuda.</strong></p><p>Queremos reunir <strong>alimentos no perecederos</strong> para apoyar a personas y familias en situación de vulnerabilidad: arroz, pasta, legumbres, conservas, aceite y leche de larga duración, siempre en envases cerrados, dentro de su fecha de consumo y en buen estado.</p><p>❤️ <strong>¿Quieres donar alimentos? Puedes entregárnoslos en el punto de recogida que anunciaremos o consultarnos para que nuestro equipo valore recogerlos directamente, según la zona y la disponibilidad. Nosotros organizaremos su entrega posterior a personas y familias que los necesiten. ¿Quieres ayudar también como voluntario?</strong> Escríbenos para coordinar una entrega o sumarte como voluntario. También buscamos comercios y entidades que quieran participar.</p><p><strong>Importante:</strong> Punto de entrega: <strong>calle Navas de Tolosa, 292, bajos, Barcelona</strong>. Cómo llegar: <strong>metro L1, parada Navas</strong>. <strong>Horario de recepción de alimentos:</strong> <strong>sábados de 19:00 a 21:00</strong> y <strong>domingos de 12:00 a 16:00</strong>. También puedes consultarnos para que recojamos los alimentos, según la zona y nuestra disponibilidad.</p><p><a href="mailto:calabuigcocinero@gmail.com?subject=Campaña%20solidaria%20de%20alimentos" style="display:inline-block;background:#ffcf76;color:#14243b;padding:14px 20px;border-radius:12px;font-weight:bold;text-decoration:none">✉️ Quiero colaborar con alimentos</a></p><p><small>La recogida recibe alimentos no perecederos. El cartel también presenta una forma de colaborar con 1 €.</small></p></section>
+<section id="talento-cristiano" class="programa historia" aria-label="Directorio Talento Cristiano de Cataluña"><h2>🎤 Talento Cristiano de Cataluña</h2>
+<figure style="margin:1rem 0"><img src="./carteles/radio-talento.webp" alt="Cantante y músicos en un estudio de ensayo" width="1200" height="510" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px"></figure>
+<p>Un espacio de Manantial FM para descubrir y apoyar a cantantes cristianos evangélicos, solistas, grupos, compositores independientes y ministerios de alabanza de toda Cataluña.</p><p><strong>Primera fase:</strong> Barcelona y su área metropolitana, de Sant Boi a Montgat. <strong>Después:</strong> artistas de Girona, Tarragona, Lleida y el resto de Cataluña.</p><p>📣 <strong>Convocatoria abierta:</strong> si eres artista cristiano o conoces a alguien que quiera dar a conocer su música, envíanos su nombre artístico, municipio, estilo musical, enlaces a canciones y redes sociales, y un contacto profesional autorizado.</p><p>Las fichas se incorporarán tras confirmar los datos y contar con el permiso del artista. La difusión o emisión de canciones requerirá las autorizaciones correspondientes.</p><p><a href="mailto:calabuigcocinero@gmail.com?subject=Talento%20Cristiano%20de%20Catalu%C3%B1a" style="display:inline-block;background:#ffcf76;color:#14243b;padding:13px 18px;border-radius:12px;font-weight:bold;text-decoration:none">✉️ Presentar un artista</a></p><p><small>Estamos preparando las primeras fichas verificadas. No publicamos datos personales privados sin autorización.</small></p></section>
+<section id="iglesias" class="programa historia" aria-label="Directorio de iglesias y comunidades cristianas de Barcelona"><h2>⛪ Iglesias y comunidades cristianas de Barcelona</h2>
+<figure style="margin:1rem 0"><img src="./carteles/radio-iglesias.webp" alt="Ilustración de una reunión en una iglesia cristiana" width="1200" height="510" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px"></figure>
+<p>Directorio informativo de iglesias y comunidades cristianas de Barcelona y su área metropolitana. Los datos proceden de páginas públicas de las entidades y directorios; pueden cambiar. Confirma horarios y ubicación antes de desplazarte.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:14px;text-align:left"><article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>⛪ Iglesia Sendero de Jesús</h3><p>🌐 <strong>Iglesia online</strong> — comunidad cristiana con actividad por internet, de momento sin sede física de atención al público.</p><p>Responsable: <strong>Pastora Rosalba Toquica Castro</strong>.</p><p>☎️ <a style="color:#ffcf76" href="tel:+34632234018">+34 632 23 40 18</a> — Pastora Rosalba</p><p>🕒 Horarios y enlaces de reuniones online: pendientes de confirmar.</p></article>
+<article style="border:2px solid #ffcf76;border-radius:14px;padding:16px;background-color:#10243a"><h3>🦁 Iglesia León de Judá</h3><p>📍 Calle Navas de Tolosa, 292, bajos, Barcelona</p><p>🚇 Metro L1, parada Navas</p><p>☎️ <a style="color:#ffcf76" href="tel:+34664316950">+34 664 31 69 50</a> (contacto de la iglesia)</p><p>🕒 <strong>Horarios de reuniones:</strong><br>Martes 20:00 — Culto de oración.<br>Jueves 20:00 — Reunión de varones.<br>Viernes 20:00 — Enseñanza bíblica.<br>Sábado 19:00 — Culto de jóvenes.<br>Domingo 12:00–14:00 — Culto familiar.</p><p><a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Navas%20de%20Tolosa%20292%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Iglesia Cristiana CECMAVI</h3><p>📍 Carrer de Maria Victòria, 11, 08014 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34609771231">+34 609 77 12 31</a></p><p>🕒 Domingos 18:00 (confirmar antes de asistir)</p><p><a style="color:#ffcf76" href="https://cecmavi.org/" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carrer%20de%20Maria%20Vict%C3%B2ria%2C%2011%2C%2008014%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Iglesia Bíblica Ebenezer</h3><p>📍 Passatge de Matilde de Gaiolà, 8-12, 08013 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34934587305">+34 934 58 73 05</a></p><p>🕒 Domingos 11:00 (confirmar antes de asistir)</p><p><a style="color:#ffcf76" href="https://www.iglesiabiblicaebenezer.org/es/horarios" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Passatge%20de%20Matilde%20de%20Gaiol%C3%A0%2C%208-12%2C%2008013%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Hechos Barcelona</h3><p>📍 Carrer del Cisell, 28, 08038 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34611662977">+34 611 66 29 77</a></p><p>🕒 Domingos 10:30 (confirmar antes de asistir)</p><p><a style="color:#ffcf76" href="https://hechosbarcelona.com/" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carrer%20del%20Cisell%2C%2028%2C%2008038%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>CEFAC Barcelona</h3><p>📍 Carrer dels Almogàvers, 78, local 2, 08027 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34640763396">+34 640 763 396</a></p><p>🕒 Domingos 11:00 (confirmar antes de asistir)</p><p><a style="color:#ffcf76" href="https://cefac.org/barcelona.html" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carrer%20dels%20Almog%C3%A0vers%2C%2078%2C%20local%202%2C%2008027%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Iglesia Evangélica Bautista de Gracia</h3><p>📍 Carrer de Verdi, 191, 08012 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34932171037">+34 932 17 10 37</a></p><p><a style="color:#ffcf76" href="https://eebg.cat/es/on-som/" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carrer%20de%20Verdi%2C%20191%2C%2008012%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Església Evangèlica Baptista Barceloneta</h3><p>📍 Carrer de Ginebra, 35, 08003 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34933192698">+34 933 19 26 98</a></p><p>🕒 Domingos 12:00 (confirmar antes de asistir)</p><p><a style="color:#ffcf76" href="https://uebc.cat/barceloneta" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carrer%20de%20Ginebra%2C%2035%2C%2008003%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Comunidad Cristiana Integral Barcelona</h3><p>📍 Carrer de les Agudes, 100, 08033 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34638908754">+34 638 908 754</a></p><p>🕒 Domingos 11:30 (confirmar antes de asistir)</p><p><a style="color:#ffcf76" href="https://barcelona.ccieuropa.com/" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carrer%20de%20les%20Agudes%2C%20100%2C%2008033%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Congregación Cristiana en España</h3><p>📍 Carrer de la França Xica, 29, 08004 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34934234821">+34 934 23 48 21</a></p><p><a style="color:#ffcf76" href="https://www.congregacioncristiana.es/institucional/contacto" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carrer%20de%20la%20Fran%C3%A7a%20Xica%2C%2029%2C%2008004%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Iglesia Evangélica Rey de Reyes</h3><p>📍 Carretera Santa Creu de Calafell, 39, 08830 Sant Boi de Llobregat</p><p>☎️ <a style="color:#ffcf76" href="tel:+34936545633">+34 936 54 56 33</a></p><p><a style="color:#ffcf76" href="https://reydereyesad.org/" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Carretera%20Santa%20Creu%20de%20Calafell%2C%2039%2C%2008830%20Sant%20Boi%20de%20Llobregat" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article>
+<article style="border:1px solid #ffffff35;border-radius:14px;padding:16px;background-color:#10243a"><h3>Iglesia Su Gracia BCN</h3><p>📍 Gran Via de les Corts Catalanes, 133, 08014 Barcelona</p><p>☎️ <a style="color:#ffcf76" href="tel:+34640675854">+34 640 675 854</a></p><p><a style="color:#ffcf76" href="https://www.cruzadacristianaespana.org/images/pdfs/DirectorioEspana2025FEB.pdf" target="_blank" rel="noopener">Web / fuente</a> · <a style="color:#ffcf76" href="https://www.google.com/maps/search/?api=1&query=Gran%20Via%20de%20les%20Corts%20Catalanes%2C%20133%2C%2008014%20Barcelona" target="_blank" rel="noopener">📍 Cómo llegar</a></p></article></div><div style="margin-top:22px;padding:18px;border:1px solid #ffffff45;border-radius:14px"><h3>📻📺 Grupo ETV Media Pro · Medios de comunicación</h3><p>Iniciativas de comunicación vinculadas al proyecto: <strong>Manantial FM</strong> (radio online) y <strong>BCN Gospel Channel</strong> (televisión online). Se muestran como medios de comunicación, no como iglesias.</p><p><a style="color:#ffcf76" href="https://calabuigcocinero-collab.github.io/manantial-fm/">📻 Manantial FM</a> · <a style="color:#ffcf76" href="https://bcngospelchannel.com/">📺 BCN Gospel Channel</a></p></div><p>¿Representas una iglesia o comunidad y quieres añadir o corregir sus datos? <a style="color:#ffcf76" href="mailto:calabuigcocinero@gmail.com?subject=Directorio%20de%20iglesias%20-%20alta%20o%20correccion">Escríbenos para actualizar el directorio</a>.</p><p><small>Última revisión de fuentes: 8 de noviembre de 2026. La inclusión no implica aval de Manantial FM.</small></p></section>
+<section id="publicidad" aria-label="Publicidad y pódcast" class="programa"><h2>📢 Publicidad y pódcast</h2>
+<figure style="margin:1rem 0"><img src="./carteles/radio-publicidad.webp" alt="Dos micrófonos en un estudio de pódcast" width="1200" height="510" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px"></figure>
+<p>¿Tienes un negocio, iglesia, evento o proyecto que quieras dar a conocer? Consulta nuestros espacios publicitarios y opciones para pódcast. También ofrecemos una promoción de 20 segundos gratuitos; pregunta por las condiciones y disponibilidad.</p><p>Información: <a href="tel:+34640343797" style="color:#ffcf76">+34 640 343 797</a> · <a href="mailto:calabuigcocinero@gmail.com" style="color:#ffcf76">calabuigcocinero@gmail.com</a></p></section>
+<section id="fundadores" aria-label="Fundadores" class="programa historia"><h2>❤️ Nuestros fundadores</h2>
+<figure style="margin:1rem 0"><img src="./cartel-bcn-gospel.webp" alt="Cartel de BCN Gospel Channel: televisión cristiana desde Barcelona, 24 horas para toda la familia" width="1672" height="941" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px"></figure>
+<p><em>Retrato de Charles y Patricia: pendiente de incorporar la fotografía original en blanco y negro.</em></p><h3>Siete años llevando esperanza</h3><p>Manantial FM nació en 2019, fruto de una historia de vida, transformación y fe. Sus fundadores, Charles Calabuig Machado y Patricia Ramos de Sousa, impulsaron este proyecto con el deseo de compartir un mensaje positivo y llevar esperanza a través de la radio.</p><p>Mucho antes de contraer matrimonio con Patricia, Charles vivió una etapa difícil de su vida. Las malas compañías lo llevaron a experimentar la dureza de vivir en la calle. Sin embargo, su historia dio un giro cuando tuvo un encuentro personal con el Señor. Aquella experiencia marcó el comienzo de una nueva etapa y sembró en su corazón el deseo de transmitir esperanza a otras personas.</p><p>Hoy, Manantial FM continúa compartiendo música, fe y mensajes positivos desde Barcelona para las naciones.</p><p><em>Esta historia es un primer relato que ampliaremos próximamente.</em></p></section>
+<p>Desde Barcelona para las naciones 🌍</p>
+<p style="text-align:center"><img src="https://hits.sh/calabuigcocinero-collab.github.io/manantial-fm.svg?view=total&amp;label=Visitas&amp;color=126c9c" alt="Contador de visitas de Manantial FM" referrerpolicy="no-referrer"></p></main>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}</script>
+</body>
+</html>

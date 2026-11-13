@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a30">
+  <meta name="description" content="Escucha Horizonte Sonoro Radio en directo. Góspel 24/7 en inglés y en español.">
+  <title>Horizonte Sonoro Radio · Góspel 24/7</title>
+  <link rel="icon" href="./logo.webp" type="image/webp">
+  <style>
+    :root { color-scheme:dark; background:#071a30; color:#f4f8fc; font-family:"Segoe UI",system-ui,sans-serif; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:radial-gradient(ellipse at 80% 0%,#155570,transparent 53%),#071a30; }
+    .shell { max-width:1120px; margin:auto; padding:clamp(1.25rem,5vw,4rem); }
+    .top { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-bottom:clamp(2rem,8vw,5rem); }
+    a { color:#b7ebea; text-underline-offset:.22em; }
+    .hero { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); align-items:center; gap:clamp(1.5rem,6vw,5rem); }
+    h1 { margin:0; font-size:clamp(2.4rem,6.5vw,5.3rem); line-height:1; letter-spacing:-.055em; }
+    h1 span { display:block; color:#ffb45a; }
+    h2 { margin:0 0 .5rem; font-size:1.05rem; }
+    p { color:#cee0eb; line-height:1.55; }
+    .brand { display:grid; place-items:center; min-width:0; padding:1rem; background:#f8f7f2; border-radius:2rem; }
+    .brand img { display:block; width:min(100%,360px); height:auto; }
+    .player { margin:1.7rem 0 0; padding:1rem 1.25rem; border:1px solid #3d6476; background:#0b263d; border-radius:1.2rem; }
+    audio { display:block; width:100%; margin:.6rem 0 .8rem; }
+    .caption { margin:.5rem 0 0; font-size:.9rem; }
+    footer { margin-top:3rem; border-top:1px solid #3d6476; padding-top:1.25rem; color:#cee0eb; }
+    @media(max-width:670px) { .hero{grid-template-columns:1fr} .brand{grid-row:1;max-width:280px} .top{padding-bottom:1.5rem} }
+  .founder { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:clamp(1rem,5vw,3rem); margin-top:clamp(2.5rem,7vw,5rem); padding:clamp(1rem,3vw,2rem); border:1px solid #3d6476; border-radius:1.2rem; background:#0b263d; }
+    .founder img { display:block; width:100%; height:auto; border-radius:.75rem; }
+    .founder h3 { margin:.25rem 0 .5rem; font-size:clamp(1.5rem,4vw,2.6rem); line-height:1.15; }
+    .founder h2 { color:#ffb45a; }
+    @media(max-width:670px) { .founder { grid-template-columns:1fr; } }
+  .programs { margin-top:clamp(2.5rem,7vw,5rem); }
+    .programs > h2 { font-size:clamp(1.5rem,4vw,2.2rem); }
+    .programs .program-card { margin-top:1rem; }
+    .donations { margin-top:clamp(2.5rem,7vw,5rem); }
+    .donations img { display:block; width:100%; height:auto; margin:.75rem 0 1rem; border-radius:.75rem; }
+    .donations a { display:inline-block; padding:.7rem 1rem; border-radius:.65rem; background:#ffb45a; color:#071a30; font-weight:700; text-decoration:none; }
+    .donations a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <nav class="top" aria-label="Navegación"><a href="#programas-podcast">Programas y pódcast</a><a href="#fundador">Fundador</a><a href="#donaciones">Donaciones</a><a href="../">Manantial FM</a><a href="https://calabuigcocinero-collab.github.io/Bcngospelchannel/">BCN Gospel Channel</a></nav>
+    <main>
+    <section class="hero" aria-label="Horizonte Sonoro Radio">
+      <div>
+        <h1>Horizonte Sonoro <span>Radio</span></h1>
+        <p>Góspel 24/7 en inglés y en español. Coros, grandes voces y clásicos del góspel.</p>
+        <section class="player" aria-labelledby="en-directo">
+          <h2 id="en-directo">Escuchar en directo</h2>
+          <audio controls preload="none" aria-label="Horizonte Sonoro Radio en directo">
+            <source src="https://s3.citrus3.com:2000/stream/manantialbrfm" type="audio/mpeg">
+            Tu navegador no admite el reproductor de audio.
+          </audio>
+          <a href="https://s3.citrus3.com:2000/public/manantialbrfm" target="_blank" rel="noopener noreferrer">Abrir reproductor de Citrus3</a>
+        </section>
+      </div>
+      <div class="brand"><img src="./logo.webp" alt="Logo oficial de Horizonte Sonoro Radio" width="720" height="720" fetchpriority="high"></div>
+    </section>
+    <section class="programs" id="programas-podcast" aria-labelledby="programas-podcast-titulo">
+      <h2 id="programas-podcast-titulo">Programas y pódcast</h2>
+      <section class="founder program-card" id="leyendas-del-gospel" aria-labelledby="leyendas-titulo">
+      <img src="./leyendas-gospel.webp" alt="Póster de Leyendas del Góspel con un micrófono clásico y un coro" width="1200" height="800" loading="lazy" decoding="async">
+      <div>
+        <p class="caption" style="color:#ffb45a;font-weight:700">Próximamente</p>
+        <h3 id="leyendas-titulo" style="font-size:clamp(1.5rem,4vw,2.6rem);margin:.25rem 0 .5rem">Leyendas del Góspel</h3>
+        <p><strong>Lunes a las 22:00</strong> · Hora de Barcelona</p>
+        <p>Las voces, las canciones y las historias que marcaron la música góspel.</p>
+      </div>
+    </section>
+      <section class="founder program-card" id="vivencias-en-cristo-jesus" aria-labelledby="vivencias-titulo">
+        <img src="./vivencias-en-cristo-jesus.webp" alt="Póster de Vivencias en Cristo Jesús: dos personas conversan frente a una Biblia abierta" width="800" height="1000" loading="lazy" decoding="async" style="max-width:360px;margin-inline:auto">
+        <div>
+          <p class="caption" style="color:#ffb45a;font-weight:700">Próximamente</p>
+          <h3 id="vivencias-titulo">Vivencias en Cristo Jesús</h3>
+          <p><strong>Todos los martes a las 22:00</strong> · Hora de Barcelona</p>
+          <p>Testimonios de fe y esperanza.</p>
+        </div>
+      </section>
+      <section class="founder program-card" id="la-otra-mejilla" aria-labelledby="mejilla-titulo">
+        <img src="./la-otra-mejilla.webp" alt="Póster de La Otra Mejilla con el retrato de Charles Calabuig Machado" width="800" height="1000" loading="lazy" decoding="async" style="max-width:360px;margin-inline:auto">
+        <div>
+          <p class="caption" style="color:#ffb45a;font-weight:700">Próximamente</p>
+          <h3 id="mejilla-titulo">La Otra Mejilla</h3>
+          <p><strong>Todos los jueves a las 22:00</strong> · Hora de Barcelona</p>
+          <p>Un espacio de conversación y reflexión con Charles Calabuig Machado.</p>
+        </div>
+      </section>
+    </section>
+    <section class="founder" id="fundador" aria-labelledby="fundador-titulo">
+      <img src="./fundador-charles.webp" alt="Retrato en blanco y negro de Charles Calabuig Machado" width="1184" height="864" loading="lazy" decoding="async">
+      <div>
+        <h2 id="fundador-titulo">Fundador</h2>
+        <h3>Charles Calabuig Machado</h3>
+        <p>Charles impulsa Horizonte Sonoro Radio desde Barcelona, un espacio para compartir góspel en inglés y en español y llevar un mensaje de fe y esperanza a través de la música.</p>
+      </div>
+    </section>
+    <section class="player donations" id="donaciones" aria-labelledby="donaciones-titulo">
+      <h2 id="donaciones-titulo">Apoya Horizonte Sonoro Radio</h2>
+      <img src="./poster-donaciones.webp" alt="Apoya a Horizonte Sonoro para que podamos traer más música góspel a tu vida" width="1200" height="675" loading="lazy" decoding="async">
+      <a href="https://www.paypal.com/ncp/payment/MZACBZ2BEMJSA" target="_blank" rel="noopener noreferrer">Donar con PayPal</a>
+    </section>
+    </main>
+    <footer>Música que inspira tu alma.</footer>
+  </div>
+</body>
+</html>

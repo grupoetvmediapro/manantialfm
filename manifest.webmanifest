@@ -1,0 +1,18 @@
+{
+  "name": "Manantial FM - Tu radio amiga",
+  "short_name": "Manantial FM",
+  "description": "Tu radio amiga, tu música, tu fe. Desde Barcelona para las naciones.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#09213d",
+  "theme_color": "#126c9c",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
