@@ -84,6 +84,19 @@ nav a:hover {background:#ffffff25;}
   --paisaje-iglesia: url("https://images.unsplash.com/photo-1765874457702-278668124f24?auto=format&fit=crop&w=760&q=70");
 }
 .logo-marca { display: block; width: clamp(120px, 24vw, 180px); height: auto; margin: 0 auto 1rem; }
+
+#anuncios { margin: 2.5rem 0; padding: 1.5rem 0; scroll-margin-top: 1rem; }
+#anuncios .anuncios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 265px), 1fr)); gap: 1rem; margin-top: 1.2rem; text-align: left; }
+#anuncios article { min-width: 0; overflow: hidden; border: 1px solid #ffffff38; border-radius: 1rem; background: #0b243c; color: #f5f8ff; }
+#anuncios figure { margin: 0; position: relative; }
+#anuncios img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
+#anuncios figcaption { position: absolute; right: .55rem; bottom: .55rem; padding: .25rem .45rem; border-radius: .25rem; color: #fff; background: #081a2e; font-size: .75rem; }
+#anuncios .anuncio-texto { padding: 1rem 1.2rem 1.3rem; }
+#anuncios h2 { margin: 0 0 .5rem; font-size: clamp(1.45rem, 4vw, 2rem); }
+#anuncios h3 { margin: .5rem 0 .8rem; font-size: 1.18rem; }
+#anuncios p { margin: .55rem 0; color: #e1edf7; line-height: 1.5; }
+#anuncios time, #anuncios a { color: #ffd28a; font-weight: 700; }
+#anuncios a { display: inline-block; margin-top: .4rem; text-decoration: underline; text-underline-offset: .22em; }
 </style>
 </head>
 <body>
@@ -92,7 +105,7 @@ nav a:hover {background:#ffffff25;}
 <img class="logo-marca" src="./logo-oficial.webp" alt="" width="384" height="384" decoding="async">
 
 <img src="./portada-manantial.webp" alt="Manantial FM, radio cristiana en línea las 24 horas desde Barcelona" width="2048" height="768" fetchpriority="high" style="display:block;width:100%;height:auto;border-radius:16px">
-<h1>MANANTIAL FM</h1><p class="tagline">Tu radio amiga, tu música, tu fe.</p><p>Desde Barcelona para las naciones 🌍</p><nav aria-label="Secciones"><a href="#directo">En directo</a><a href="#horizonte-sonoro">Horizonte Sonoro Radio</a><a href="#programacion">Programación</a><a href="#mision">Nuestra misión</a><a href="#recogida-alimentos">Recogida de alimentos</a><a href="#iglesias">Iglesias y comunidades</a><a href="#talento-cristiano">Talento Cristiano de Cataluña</a><a href="#publicidad">Publicidad</a><a href="#fundadores">Fundadores</a><a href="#apoyar">Apoyar</a></nav></header>
+<h1>MANANTIAL FM</h1><p class="tagline">Tu radio amiga, tu música, tu fe.</p><p>Desde Barcelona para las naciones 🌍</p><nav aria-label="Secciones"><a href="#directo">En directo</a><a href="#horizonte-sonoro">Horizonte Sonoro Radio</a><a href="#programacion">Programación</a><a href="#mision">Nuestra misión</a><a href="#recogida-alimentos">Recogida de alimentos</a><a href="#iglesias">Iglesias y comunidades</a><a href="#talento-cristiano">Talento Cristiano de Cataluña</a><a href="#publicidad">Publicidad</a><a href="#fundadores">Fundadores</a><a href="#apoyar">Apoyar</a><a href="#anuncios">Anuncios</a></nav></header>
 <h2 id="directo">📻 Escuchar en directo</h2>
 
 
@@ -177,7 +190,43 @@ Tu navegador no admite audio.
 <figure style="margin:1rem 0"><img src="./cartel-bcn-gospel.webp" alt="Cartel de BCN Gospel Channel: televisión cristiana desde Barcelona, 24 horas para toda la familia" width="1672" height="941" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px"></figure>
 <p><em>Retrato de Charles y Patricia: pendiente de incorporar la fotografía original en blanco y negro.</em></p><h3>Siete años llevando esperanza</h3><p>Manantial FM nació en 2019, fruto de una historia de vida, transformación y fe. Sus fundadores, Charles Calabuig Machado y Patricia Ramos de Sousa, impulsaron este proyecto con el deseo de compartir un mensaje positivo y llevar esperanza a través de la radio.</p><p>Mucho antes de contraer matrimonio con Patricia, Charles vivió una etapa difícil de su vida. Las malas compañías lo llevaron a experimentar la dureza de vivir en la calle. Sin embargo, su historia dio un giro cuando tuvo un encuentro personal con el Señor. Aquella experiencia marcó el comienzo de una nueva etapa y sembró en su corazón el deseo de transmitir esperanza a otras personas.</p><p>Hoy, Manantial FM continúa compartiendo música, fe y mensajes positivos desde Barcelona para las naciones.</p><p><em>Esta historia es un primer relato que ampliaremos próximamente.</em></p></section>
 <p>Desde Barcelona para las naciones 🌍</p>
-<p style="text-align:center"><img src="https://hits.sh/calabuigcocinero-collab.github.io/manantial-fm.svg?view=total&amp;label=Visitas&amp;color=126c9c" alt="Contador de visitas de Manantial FM" referrerpolicy="no-referrer"></p></main>
+<p style="text-align:center"><img src="https://hits.sh/calabuigcocinero-collab.github.io/manantial-fm.svg?view=total&amp;label=Visitas&amp;color=126c9c" alt="Contador de visitas de Manantial FM" referrerpolicy="no-referrer"></p>
+<section id="anuncios" aria-labelledby="anuncios-titulo">
+  <h2 id="anuncios-titulo">Anuncios</h2>
+  <p>Agenda evangélica de Barcelona y su área metropolitana</p>
+  <div class="anuncios-grid">
+    <article>
+      <figure>
+        <img src="./anuncios/biblia.webp" alt="Biblia abierta en una sala de reunión" loading="lazy" decoding="async" width="800" height="533">
+        <figcaption>Imagen ilustrativa</figcaption>
+      </figure>
+      <div class="anuncio-texto">
+        <time datetime="2026-12-05">Sábado 5 de diciembre de 2026</time>
+        <h3>Celebración del Nuevo Testamento en lengua de signos catalana</h3>
+        <p>Iglesia Evangélica Unida · Av. de Béjar, 299, Terrassa.</p>
+        <p><strong>Organiza</strong> · Congreso de Sordos Cristianos de España</p>
+        <p>Entrada gratuita.</p>
+        <p><strong>Pendiente de confirmar</strong> · hora de inicio.</p>
+        <a href="https://csce.micrisordos.org/?page_id=1834">Ver anuncio oficial</a>
+      </div>
+    </article>
+    <article>
+      <figure>
+        <img src="./anuncios/oracion.webp" alt="Grupo caminando cerca de las Torres Venecianas de Barcelona" loading="lazy" decoding="async" width="800" height="533">
+        <figcaption>Imagen ilustrativa</figcaption>
+      </figure>
+      <div class="anuncio-texto">
+        <time datetime="2026-12-12T11:00:00+01:00">Sábado 12 de diciembre de 2026 · 11:00</time>
+        <h3>Caminata de oración</h3>
+        <p>Salida desde Plaça d’Espanya, Barcelona.</p>
+        <p><strong>Organiza</strong> · Misión Carismática Internacional Barcelona</p>
+        <p><strong>Pendiente de confirmar</strong> · punto exacto de encuentro dentro de la plaza.</p>
+        <a href="https://mcibarcelona.com/eventos/">Ver anuncio oficial</a>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
 <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}</script>
 </body>
 </html>
